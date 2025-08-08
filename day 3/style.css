@@ -1,0 +1,103 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f9f9f9;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.container {
+  background: white;
+  border: 2px solid black;
+  padding: 20px;
+  max-width: 600px;
+  width: 100%;
+  position: relative;
+}
+
+.sale-tag {
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  background: red;
+  color: white;
+  padding: 5px 10px;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+.content {
+  display: flex;
+  gap: 20px;
+}
+
+.content img {
+  max-width: 250px;
+  border: 1px solid #ccc;
+}
+
+.info {
+  flex: 1;
+}
+
+.shipping {
+  color: gray;
+  font-size: 14px;
+  margin-top: -10px;
+}
+
+.colors {
+  margin: 10px 0;
+}
+
+.color {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.black {
+  background: black;
+}
+.blue {
+  background: blue;
+}
+.red {
+  background: red;
+}
+.green {
+  background: green;
+}
+.yellow {
+  background: yellow;
+}
+.brown {
+  background: brown;
+}
+
+button {
+  margin-top: 20px;
+  width: 100%;
+  padding: 15px;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+}
+
+button:hover{
+  background-color: white;
+  color: black;
+}
+
+h2{
+  position: relative;
+}
