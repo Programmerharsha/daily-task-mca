@@ -1,0 +1,33 @@
+h4{
+    font-family: sans-serif;
+    text-align: center;
+    font-size: larger;
+}
+
+div{
+    padding: 10;
+    margin: 250px;
+    border: 1px ;
+    background-color: aliceblue;
+}
+
+button{
+    position: fixed;
+    left: 800px ;
+}
+
+hr{
+    border: 5px solid;
+    margin: 1px;
+    color: skyblue;
+    }
+
+a{
+    color: skyblue;
+    cursor: pointer;
+    font-family: sans-serif;
+}
+
+header{
+    margin: 20px;
+}
