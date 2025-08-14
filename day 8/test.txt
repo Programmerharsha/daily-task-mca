@@ -1,0 +1,119 @@
+"forEach" Method in JavaScript: Practical Questions:
+1. Find the length of each string in an array:
+Input:
+["apple", "banana", "grape"];   
+Output:
+[5, 6, 5]
+
+
+2. Skip negative numbers in an array:
+Input:
+[1, -2, 3, -4, 5]
+Output:
+[1, 3, 5]
+
+3. Change Grade property value using forEach:
+Input:
+students = [
+    { name: "Alice", grade: "A" },
+    { name: "Bob", grade: "B" },
+    { name: "Charlie", grade: "C" }
+];
+Output:
+{name: 'Alice', grade: 'A+'} 
+{name: 'Bob', grade: 'A+'}
+{name: 'Charlie', grade: 'A+'}
+
+4. Increment all elements in an array by 1.
+Input:
+[1, 2, 3]
+Output:
+[2, 3, 4]
+
+5. Increase the age of all users in an array of objects.
+Input:
+[
+    { name: "Alice", age: 25 },
+    { name: "Bob", age: 30 },
+    { name: "Charlie", age: 22 }
+];
+Output:
+{ name: "Alice", age: 26 },
+{ name: "Bob", age: 31 },
+{ name: "Charlie", age: 23 }
+
+// Exploring the "map" Method in JavaScript: Practical Questions
+1. Map an array of prices to formatted currency strings with dollar sign
+Input:
+[15.99, 29.5, 7.25]
+Output:
+['$15.99', '$29.50', '$7.25']
+
+2. Map an array of numbers to "even" or "odd" strings.
+Input:
+[1, 2, 3, 4, 5]
+Output:
+['odd', 'even', 'odd', 'even', 'odd']
+
+3. Map an array of arrays to arrays with their sums.
+Input:
+[[1, 2, 3], [4, 5], [6, 7, 8]]
+Output:
+[6, 9, 21]
+
+4. Map an array of timestamps to formatted time strings.
+Input:
+[1630488000000, 1631179200000, 1633708800000]
+Output:
+['2:50:00 PM', '2:50:00 PM', '9:30:00 PM']
+
+5. Map an array of strings to an array of text display with letter spacing.
+Input:
+["hello", "world", "javascript"]
+Output:
+['h e l l o', 'w o r l d', 'j a v a s c r i p t']
+
+6. Map an array of numbers to an array of arrays containing incremental values
+Input:
+[2, 4, 3, 5]
+Output:
+[1, 2]
+[1, 2, 3, 4]
+[1, 2, 3]
+[1, 2, 3, 4, 5]
+
+Filtering Data with filter": Practical JavaScript Questions
+1. Filter out falsy values from an array
+Input:
+[0, "", false, null, undefined, 1, "hello"]
+Output:
+[1, "hello"]
+
+2. Filter numbers that are greater than 5 and less than 10
+Input:
+[3, 6, 8, 11, 14]
+Output:
+[6, 8]
+
+3. Filter out duplicate values from an array.
+Input:
+[1, 2, 2, 3, 4, 4, 5]
+Output:
+[1, 2, 3, 4, 5]
+
+4. Filter out strings that match a specific pattern
+Input:
+["apple", "banana", "cherry", "grape"]
+Output:
+["banana"]
+
+5. Extract objects from an array based on a age property value greater than 18.
+Input:
+[
+    { name: "Alice", age: 12 },
+    { name: "Bob", age: 30 },
+    { name: "Charlie", age: 22 }
+];
+Output:
+{name: 'Bob', age: 30}
+{name: 'Charlie', age: 22}
