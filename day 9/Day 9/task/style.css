@@ -1,0 +1,32 @@
+div{
+    border: 5px solid;
+    text-align: center;
+}
+
+button{
+  margin-top: 20px;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: black;
+  color: white;
+  border: 1px solid;
+  cursor: pointer;
+  text-align: center;
+}
+
+button:hover{
+    color: black;
+    background-color: white;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+fieldset{
+    border-color: white;
+}

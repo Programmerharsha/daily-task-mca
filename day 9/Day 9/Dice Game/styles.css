@@ -1,0 +1,41 @@
+
+body{
+    background-color: lightslategrey;
+    font-family: sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+h1{
+    font-size: larger;
+    color: white;
+}
+
+button{
+    background-color: black;
+    color: white;
+    border: 1px solid;
+    padding: 20px 40px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+button:hover{
+    background-color: white;
+    color: black;
+}
+
+img#dice1{
+    width: 200px;
+    height: 200px;
+    margin: 50px;
+    
+}
+
+img#dice2{
+    width: 200px;
+    height: 200px;
+    margin: 50px;
+}
+
+

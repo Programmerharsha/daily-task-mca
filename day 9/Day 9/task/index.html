@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms, talbles and basic styling</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="biodata">
+    <h2>Forms:</h2>
+    <form action="" method="get" id="biodataForm">
+
+    <form action="" method="get"></form>
+    <label for="name">Name: </label>
+    <input type="text" id="name"><br><br>
+
+    <label for="email">email: </label>
+    <input type="email" id="email"><br><br>
+
+    <label for="email">date of birth: </label>
+    <input type="date" id="date"><br><br>
+
+    <label for="email">age: </label>
+    <input type="number" id="age"><br><br>
+
+    <label for="email">phone no: </label>
+    <input type="text" id="phone"><br><br>
+    
+    <label for="email"> address: </label>
+    <input type="text" id="address"><br><br>
+    
+
+    <label for="email"> pincode: </label>
+    <input type="text" id="pincode"><br><br>
+
+    <fieldset class="age">
+        <legend>maritial status</legend>
+        <input type="radio" id="married" name="maritial status" value="married">married
+        <input type="radio" id="unmarried" name="maritial status" value="unmarried">unmarried
+
+    </fieldset>
+
+    <fieldset class="gender">
+        <legend>gender</legend>
+        <input type="radio" id="male" name="gender" value="male">male
+        <input type="radio" id="female" name="gender" value="female">female
+        
+    </fieldset>
+    <br>
+    <button>submit</button>
+
+    </div>
+<div class="submitted-data">
+<form action="" method="get" id="biodataForm">
+
+<h2>Submitted Data:</h2>
+    <table border="1" id="dataTable">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>DOB</th>
+                <th>Age</th>
+                <th>Phone</th>
+                <th>Address</th>
+                <th>Pincode</th>
+                <th>Marital Status</th>
+                <th>Gender</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
