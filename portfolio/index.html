@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harsha - Portfolio</title>
+    <meta name="description" content="Professional portfolio of Harsha - Full Stack Developer">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <canvas id="particles-canvas"></canvas>
+    
+    <div id="cursor-trail"></div>
+    
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">HARSHA</span>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#experience" class="nav-link">Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+        
+        <div class="progress-bar" id="progress-bar"></div>
+        
+        <div class="section-indicators" id="section-indicators">
+            <div class="indicator" data-section="home"></div>
+            <div class="indicator" data-section="about"></div>
+            <div class="indicator" data-section="skills"></div>
+            <div class="indicator" data-section="projects"></div>
+            <div class="indicator" data-section="experience"></div>
+            <div class="indicator" data-section="contact"></div>
+        </div>
+    </nav>
+
+    <button class="theme-toggle" id="theme-toggle">
+        <i class="fas fa-moon"></i>
+    </button>
+
+    <div class="floating-buttons">
+        <button class="fab" id="scroll-to-top">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        <button class="fab" id="contact-fab">
+            <i class="fas fa-envelope"></i>
+        </button>
+    </div>
+
+    <main>
+        <section id="home" class="hero section">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Hi, I'm Harsha
+                </h1>
+                <p class="hero-subtitle animate-text">Full Stack Developer & UI/UX Designer</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                </div>
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" class="social-link"><i class="fa-brands fa-github"></i></a>
+                    <a href="#" class="social-link"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#" class="social-link"><i class="fa-solid fa-envelope"></i></a>
+                    <a href="#" class="social-link"><i class="fa-solid fa-phone"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about section">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p class="fade-in">I'm a passionate full-stack developer with over 5 years of experience creating digital experiences that make people's lives simpler and more enjoyable. I specialize in React, Node.js, and modern web technologies.</p>
+                        <p class="fade-in">When I'm not coding, you'll find me exploring new technologies, contributing to open source projects, or enjoying a good cup of coffee while sketching new ideas.</p>
+                        
+                        <div class="stats">
+                            <div class="stat-item">
+                                <span class="stat-number" data-count="50">0</span>
+                                <span class="stat-label">Projects Completed</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number" data-count="5">0</span>
+                                <span class="stat-label">Years Experience</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number" data-count="30">0</span>
+                                <span class="stat-label">Happy Clients</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-user fa-5x"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="skills section">
+            <div class="container">
+                <h2 class="section-title">Skills</h2>
+                <div class="skills-content">
+                    <div class="skill-category">
+                        <h3>Frontend</h3>
+                        <div class="skill-item">
+                            <span class="skill-name">HTML/CSS</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="95"></div>
+                            </div>
+                            <span class="skill-percentage">95%</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">JavaScript</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90"></div>
+                            </div>
+                            <span class="skill-percentage">90%</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">React</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85"></div>
+                            </div>
+                            <span class="skill-percentage">85%</span>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <h3>Backend</h3>
+                        <div class="skill-item">
+                            <span class="skill-name">Node.js</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="80"></div>
+                            </div>
+                            <span class="skill-percentage">80%</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Python</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="75"></div>
+                            </div>
+                            <span class="skill-percentage">75%</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Database</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="70"></div>
+                            </div>
+                            <span class="skill-percentage">70%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects section">
+            <div class="container">
+                <h2 class="section-title">Projects</h2>
+                <div class="project-carousel">
+                    <div class="carousel-container">
+                        <div class="project-slide active">
+                            <div class="project-card">
+                                <div class="project-image">
+                                    <i class="fas fa-laptop-code fa-3x"></i>
+                                </div>
+                                <div class="project-content">
+                                    <h3>E-Commerce Platform</h3>
+                                    <p>A full-stack e-commerce solution built with React and Node.js</p>
+                                    <div class="project-tech">
+                                        <span class="tech-tag">React</span>
+                                        <span class="tech-tag">Node.js</span>
+                                        <span class="tech-tag">MongoDB</span>
+                                    </div>
+                                    <button class="btn btn-primary open-modal" data-project="0">View Details</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="project-slide">
+                            <div class="project-card">
+                                <div class="project-image">
+                                    <i class="fas fa-mobile-alt fa-3x"></i>
+                                </div>
+                                <div class="project-content">
+                                    <h3>Task Management App</h3>
+                                    <p>A productivity app for team collaboration and project management</p>
+                                    <div class="project-tech">
+                                        <span class="tech-tag">Vue.js</span>
+                                        <span class="tech-tag">Express</span>
+                                        <span class="tech-tag">PostgreSQL</span>
+                                    </div>
+                                    <button class="btn btn-primary open-modal" data-project="1">View Details</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="project-slide">
+                            <div class="project-card">
+                                <div class="project-image">
+                                    <i class="fas fa-chart-line fa-3x"></i>
+                                </div>
+                                <div class="project-content">
+                                    <h3>Analytics Dashboard</h3>
+                                    <p>Real-time data visualization dashboard for business intelligence</p>
+                                    <div class="project-tech">
+                                        <span class="tech-tag">Angular</span>
+                                        <span class="tech-tag">D3.js</span>
+                                        <span class="tech-tag">Python</span>
+                                    </div>
+                                    <button class="btn btn-primary open-modal" data-project="2">View Details</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <button class="carousel-btn prev" id="prev-btn">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="carousel-btn next" id="next-btn">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                    
+                    <div class="carousel-indicators">
+                        <button class="indicator-dot active" data-slide="0"></button>
+                        <button class="indicator-dot" data-slide="1"></button>
+                        <button class="indicator-dot" data-slide="2"></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="experience section">
+            <div class="container">
+                <h2 class="section-title">Experience</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3>Senior Full Stack Developer</h3>
+                            <h4>TechCorp Inc.</h4>
+                            <span class="timeline-date">2022 - Present</span>
+                            <p>Led development of multiple web applications using React and Node.js. Mentored junior developers and implemented best practices.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3>Frontend Developer</h3>
+                            <h4>WebSolutions Ltd.</h4>
+                            <span class="timeline-date">2020 - 2022</span>
+                            <p>Developed responsive web applications and improved user experience across multiple projects. Collaborated with design teams to implement pixel-perfect interfaces.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3>Junior Developer</h3>
+                            <h4>StartupHub</h4>
+                            <span class="timeline-date">2019 - 2020</span>
+                            <p>Worked on various client projects, gained experience in modern web technologies and agile development methodologies.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact section">
+            <div class="container">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3>Let's work together</h3>
+                        <p>I'm always interested in new opportunities and exciting projects. Feel free to reach out!</p>
+                        
+                        <div class="contact-item">
+                            <i class="fa-solid fa-envelope"></i>
+                            <span>hariharanharsha15@email.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+91 9715735868</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Coimatore, TamilNadu</span>
+                        </div>
+                    </div>
+                    
+                    <form class="contact-form" id="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                            <span class="form-error" id="name-error"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                            <span class="form-error" id="email-error"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                            <span class="form-error" id="subject-error"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                            <span class="form-error" id="message-error"></span>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; <span id="current-year"></span> Harsha. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <div class="modal" id="project-modal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <div class="modal-body" id="modal-body">
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
